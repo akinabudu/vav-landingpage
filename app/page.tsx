@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Giveaway from "./giveaway";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Home/Hero";
@@ -12,6 +11,7 @@ import Benefits from "@/components/Home/Benefits";
 import Steps from "@/components/Home/Steps";
 import Organisers from "@/components/Home/Organisers";
 import SignUp from "@/components/Home/SignUp";
+import ParticlesPage from "@/components/Home/Particles";
 
 export default function Home() {
   const heroVariants = {
@@ -24,16 +24,21 @@ export default function Home() {
   };
 
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <Unlock/>
-      <Video/>
-      <Benefits/>
-      <Steps/>
-      <Organisers/>
-      <SignUp/>
-      {/* <Footer /> */}
+    < >
+      {/* <div className="abolute z-0"> */}
+      {/* </div> */}
+      {/* <div className="z-10"> */}
+        <NavBar />
+        <Hero />
+        <Unlock />
+        <Video />
+        <Benefits />
+        <Steps />
+        <Organisers />
+        <SignUp />
+        <ParticlesPage />
+        {/* <Footer /> */}
+      {/* </div> */}
     </>
   );
 }
