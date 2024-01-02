@@ -72,19 +72,16 @@ export default function Organisers() {
       variants={parentVariant}
       initial="initial"
       whileInView={"whileInView"}
-      className={` flex flex-col justify-start items-center bg-[#EEE]/90 w-full h-full md:h-[100vh] px-5 py-5 md:py-20`}
+      className={` flex flex-col justify-start items-center bg-[#EEE]/90 w-full h-full md:h-[110vh] px-5 py-5 md:py-20`}
     >
       <motion.div
-              variants={childrenVariantHeader}
-
+        variants={childrenVariantHeader}
         className={`${poppins.className} text-[#0038FF] text-2xl md:text-4xl font-bold text-center mb-6`}
       >
         WHO THE ORGANISERS ARE
       </motion.div>
       <motion.div
-              variants={childrenVariantHeader}
-
-
+        variants={childrenVariantHeader}
         className={`${poppins2.className} w-full md:w-[50vw] text-center text-[#121212] place-self-center`}
       >
         The 100 African Digital Entrepreneur challenge is an initiative built by{" "}
@@ -94,11 +91,9 @@ export default function Organisers() {
         tools, network and funding.
       </motion.div>
       <div className=" grid grid-cols-1 md:grid-cols-5 items-center gap-5 mt-8">
-        <motion.div
-        variants={childrenVariant2}
-        className="md:col-span-2">
+        <motion.div variants={childrenVariant2} className="md:col-span-2">
           <Image
-            src={"/assets/images/vav1.png"}
+            src={"/assets/images/vav4.png"}
             alt={"vav benefits"}
             height={600}
             width={600}
@@ -107,7 +102,7 @@ export default function Organisers() {
         <div className="grid  md:grid-flow-col md:grid-rows-3 md:col-span-3 gap-2 w-full ">
           {organisersList.map((organ, key) => (
             <motion.div
-            variants={childrenVariant}
+              variants={childrenVariant}
               className={
                 "flex flex-col justify-center items-start gap-2 my-2 text-[#5B5B5B] text-[18px] w-full"
               }
@@ -115,13 +110,19 @@ export default function Organisers() {
             >
               <div className={`${poppins2.className} flex items-center gap-2 `}>
                 {Bullet(organ.no)}
-                <motion.div 
-                variants={childrenVariant2}
-                className="font-bold text-[17px]">{organ.title}</motion.div>
+                <motion.div
+                  variants={childrenVariant2}
+                  className="font-bold text-[17px]"
+                >
+                  {organ.title}
+                </motion.div>
               </div>
-              <motion.div 
-              variants={childrenVariant}
-              className=" text-[14px] text-[#121212]">{organ.content}</motion.div>
+              <motion.div
+                variants={childrenVariant}
+                className=" text-[14px] text-[#121212]"
+              >
+                {organ.content}
+              </motion.div>
             </motion.div>
           ))}
         </div>

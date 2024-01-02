@@ -2,7 +2,7 @@ import React from "react";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import {motion,Variants} from 'framer-motion'
+import { motion, Variants } from "framer-motion";
 
 const parentVariant: Variants = {
   initial: { opacity: 0 },
@@ -14,18 +14,16 @@ const parentVariant: Variants = {
 
 const childrenVariant: Variants = {
   initial: { opacity: 0, x: 50 },
-  whileInView: { opacity: 1, x: 0,  },
+  whileInView: { opacity: 1, x: 0 },
 };
 const childrenVariant2: Variants = {
   initial: { opacity: 0, x: -50 },
-  whileInView: { opacity: 1, x: 0,  },
+  whileInView: { opacity: 1, x: 0 },
 };
 const childrenVariantHeader: Variants = {
   initial: { opacity: 0, scale: 0 },
-  whileInView: { opacity: 1, scale: 1,  },
-  
+  whileInView: { opacity: 1, scale: 1 },
 };
-
 
 const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 const BenefitsList = [
@@ -38,26 +36,29 @@ const BenefitsList = [
 export default function Benefits() {
   return (
     <div className=" bg-[#EEE]/90 md:h-[90vh] h-full py-20">
-      <motion.div 
-      variants={parentVariant} 
-      initial='initial'
-      whileInView={'whileInView'}
-      className=" px-5 md:px-48 ">
+      <motion.div
+        variants={parentVariant}
+        initial="initial"
+        whileInView={"whileInView"}
+        className=" px-5 md:px-48 "
+      >
         <motion.div
-        variants={childrenVariantHeader}
-        className="w-full flex  items-center my-10 px-5">
+          variants={childrenVariantHeader}
+          className="w-full flex  items-center my-10 px-5"
+        >
           <hr className="w-full border border-black" />
           <div
-            className={`${poppins.className} px-5 text-md md:text-xl text-center md:w-[50vw] w-full`}
+            className={`${poppins.className} px-5 text-md md:text-3xl text-[#0038FF] font-extrabold text-center md:w-[70vw] w-full uppercase`}
           >
             Features and Benefits
           </div>
           <hr className="w-full border border-black" />
         </motion.div>
 
-        <motion.div 
-        variants={childrenVariant2}
-        className=" grid grid-cols-1 md:grid-cols-5 items-center gap-5">
+        <motion.div
+          variants={childrenVariant2}
+          className=" grid grid-cols-1 md:grid-cols-5 items-center gap-5"
+        >
           <div className=" grid-flow-row col-span-3 gap-2  px-5">
             <div className={`${poppins.className} font-extrabold text-xl `}>
               List of Benefits
@@ -73,17 +74,12 @@ export default function Benefits() {
                   <div className="w-1/12">
                     <Bullet />
                   </div>
-                  <div className="w-11/12">
-
-                  {benefit}
-</div>
+                  <div className="w-11/12">{benefit}</div>
                 </div>
               ))}
             </div>
           </div>
-          <motion.div 
-          variants={childrenVariant}
-          className="md:col-span-2">
+          <motion.div variants={childrenVariant} className="md:col-span-2">
             <Image
               src={"/assets/images/vav2.png"}
               alt={"vav benefits"}

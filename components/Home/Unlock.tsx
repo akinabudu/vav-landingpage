@@ -39,7 +39,7 @@ export default function Unlock() {
 
         className="order-2 md:order-1 grid  grid-flow-row md:col-span-3 gap-6  justify-start px-5">
           <strong
-            className={`${poppins.className} font-extrabold md:text-5xl text-3xl md:leading-[3.5rem] leading-[2.5rem]`}
+            className={`${poppins.className} font-extrabold md:text-5xl text-2xl md:leading-[3.5rem] leading-[2.5rem]`}
           >
             Unlocking Your
             <br /> Digital
@@ -59,7 +59,7 @@ export default function Unlock() {
 
         className="order-1 md:order-2 md:col-span-2">
           <Image
-            src={"/assets/images/vav3.png"}
+            src={"/assets/images/vav5.png"}
             alt={"vav unlock"}
             height={400}
             width={400}
