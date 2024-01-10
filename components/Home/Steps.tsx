@@ -118,7 +118,7 @@ export default function Steps() {
         >
           Add hashtag <strong>#1000AfricanEntrepreneurchallenge</strong> to your
           story post so that we can see what you done also you add tag the
-          account <strong>100Africanchallenge</strong> on Instagram.
+          account <strong>1000Africanchallenge</strong> on Instagram.
         </div>
       </div>
     </div>
