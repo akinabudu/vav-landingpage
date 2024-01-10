@@ -26,16 +26,16 @@ const childrenVariant2: Variants = {
 
 export default function Unlock() {
   return (
-    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full  py-5 md:py-20 ">
+    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full  py-5 md:py-20 w-full">
       <motion.div
         variants={parentVariant}
         initial="initial"
         whileInView={"whileInView"}
-        className="px-5 md:px-48 grid grid-cols-1 md:grid-cols-5 gap-5 items-center"
+        className="px-5 md:px-48 grid grid-cols-1 md:grid-cols-5  items-center"
       >
         <motion.div
           variants={childrenVariant2}
-          className="order-2 md:order-1 grid  grid-flow-row md:col-span-3 gap-6  justify-start px-5"
+          className="order-2 md:order-1 grid  grid-flow-row md:col-span-3  justify-start px-5 gap-10"
         >
           <strong
             className={`${poppins.className} font-extrabold md:text-5xl text-2xl md:leading-[3.5rem] leading-[2.5rem]`}

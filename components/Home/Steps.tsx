@@ -68,9 +68,9 @@ const StepsList = [
 
 export default function Steps() {
   return (
-    <div className="flex flex-col items-center py-10 place-self-center px-5">
+    <div className="flex flex-col items-center py-10 justify-center md:px-5 w-full ">
       <div className="text-white text-4xl font-bold my-5">STEPS TO TAKE</div>
-      <div className="h-fit p-10 px-5 md:px-20 bg-[#EEE]/90 w-full md:w-[60vw] rounded-3xl">
+      <div className="h-fit p-10 px-5 md:px-20 bg-[#EEE]/90 w-full md:w-[60vw] md:rounded-3xl">
         {StepsList.map((step, key) => (
           <motion.div
             variants={parentVariant}

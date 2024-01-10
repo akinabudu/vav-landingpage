@@ -14,31 +14,19 @@ import SignUp from "@/components/Home/SignUp";
 import ParticlesPage from "@/components/Home/Particles";
 
 export default function Home() {
-  const heroVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { type: "spring", duration: 0.5 },
-    },
-  };
+  
 
   return (
-    < >
-      {/* <div className="abolute z-0"> */}
-      {/* </div> */}
-      {/* <div className="z-10"> */}
-        <NavBar />
-        <Hero />
-        <Unlock />
-        <Video />
-        <Benefits />
-        <Steps />
-        <Organisers />
-        <SignUp />
-        <ParticlesPage />
-        {/* <Footer /> */}
-      {/* </div> */}
+    <>
+      <NavBar />
+      <Hero />
+      <Unlock />
+      <Video />
+      <Benefits />
+      <Steps />
+      <Organisers />
+      <SignUp />
+      <ParticlesPage />
     </>
   );
 }

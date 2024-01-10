@@ -14,7 +14,9 @@ export default function NavBar() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <div className="w-full bg-transparent grid grid-flow-col gap-2 md:gap-4 text-white items-center mt-10 md:text-md  text-sm justify-items-center justify-center">
+<div className="w-full flex justify-center">
+
+    <div className="w-full md:w-[60vw] bg-transparent grid grid-cols-5 gap-1 md:gap-2 text-white items-center mt-10 md:text-lg  text-[11px] justify-items-center justify-around px-5 md:px-20">
       {NavMenuItems.map((item, key) => (
         <Link
           href={item.link}
@@ -25,5 +27,6 @@ export default function NavBar() {
         </Link>
       ))}
     </div>
+</div>
   );
 }

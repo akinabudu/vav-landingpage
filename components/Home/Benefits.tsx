@@ -35,7 +35,7 @@ const BenefitsList = [
 
 export default function Benefits() {
   return (
-    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full py-20">
+    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full py-20 w-full       ">
       <motion.div
         variants={parentVariant}
         initial="initial"
