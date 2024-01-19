@@ -1,7 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Home/Hero";
@@ -26,6 +23,7 @@ export default function Home() {
       <Steps />
       <Organisers />
       <SignUp />
+      <Footer />
       <ParticlesPage />
     </>
   );

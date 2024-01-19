@@ -68,7 +68,7 @@ const organisersList = [
 
 export default function Organisers() {
   return (
-    <motion.div
+    <motion.section  id="who"
       variants={parentVariant}
       initial="initial"
       whileInView={"whileInView"}
@@ -127,7 +127,7 @@ export default function Organisers() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 

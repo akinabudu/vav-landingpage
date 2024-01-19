@@ -21,7 +21,7 @@ export default function Provider({  children,
         widgetId={process.env.NEXT_PUBLIC_TAWKTO_WIDGET_ID}
         ref={tawkMessengerRef}
       />
-      <div className={`${inter.className} w-[100vw] antialiased flex flex-col justify-center overflow-x-hidden`}>
+      <div className={`${inter.className} w-full antialiased flex flex-col justify-center overflow-x-hidden`}>
 
       {children}
       </div>

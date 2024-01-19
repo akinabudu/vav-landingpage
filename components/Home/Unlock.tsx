@@ -26,7 +26,7 @@ const childrenVariant2: Variants = {
 
 export default function Unlock() {
   return (
-    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full  py-5 md:py-20 w-full">
+    <section id="about" className=" bg-[#EEE]/90 md:h-[100vh] h-full  py-5 md:py-20 w-full">
       <motion.div
         variants={parentVariant}
         initial="initial"
@@ -69,6 +69,6 @@ export default function Unlock() {
           />
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 }

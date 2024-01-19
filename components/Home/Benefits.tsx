@@ -35,7 +35,7 @@ const BenefitsList = [
 
 export default function Benefits() {
   return (
-    <div className=" bg-[#EEE]/90 md:h-[90vh] h-full py-20 w-full       ">
+    <section id="benefits" className=" bg-[#EEE]/90 md:h-[90vh] h-full py-20 w-full       ">
       <motion.div
         variants={parentVariant}
         initial="initial"
@@ -89,7 +89,7 @@ export default function Benefits() {
           </motion.div>
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 }
 
