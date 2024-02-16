@@ -68,11 +68,12 @@ const organisersList = [
 
 export default function Organisers() {
   return (
-    <motion.section  id="who"
+    <div className="flex  justify-center items-center w-full h-full md:h-[110vh]">
+    <motion.div  id="who"
       variants={parentVariant}
       initial="initial"
       whileInView={"whileInView"}
-      className={` flex flex-col justify-start items-center bg-[#EEE]/90 w-full h-full md:h-[110vh] px-5 py-5 md:py-20`}
+      className={` flex flex-col justify-start items-center bg-[#EEE]/90 w-full h-full  px-5 py-5 md:py-10`}
     >
       <motion.div
         variants={childrenVariantHeader}
@@ -127,7 +128,8 @@ export default function Organisers() {
           ))}
         </div>
       </div>
-    </motion.section>
+    </motion.div>
+    </div>
   );
 }
 

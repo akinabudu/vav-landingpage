@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function SignUp() {
   return (
@@ -9,7 +10,15 @@ export default function SignUp() {
         Ready to unleash your inner lion? Join the 100 African Digital
         Entrepreneur Challenge today!
       </div>
-      <Button size={"lg"} className="rounded-full text-lg font-bold">SIGN UP</Button>
+      <Button size={"lg"} className="rounded-full text-lg font-bold">
+        <Link
+        href={"https://forms.gle/g8rXyWkMRBL2AJP7A"} 
+        target="_blank"
+        >
+        SIGN UP
+        </Link>
+        
+        </Button>
     </div>
   );
 }
